@@ -54,14 +54,11 @@ public class Obstacle {
             final int tiresCount = 4;
             final float gap = 43f;
 
-            // ширина одной шины на исходной текстуре
             float tireWidth = (textureWidth - gap * (tiresCount - 1)) / tiresCount;
 
-            // масштаб изображения
             float scaleX = width / textureWidth;
             float scaleY = height / textureHeight;
 
-            // радиус круга
             float radius = Math.min(tireWidth * scaleX, textureHeight * scaleY) * 0.45f;
 
             for (int i = 0; i < tiresCount; i++) {

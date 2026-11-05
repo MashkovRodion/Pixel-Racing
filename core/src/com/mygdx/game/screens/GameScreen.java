@@ -509,7 +509,7 @@ public class GameScreen extends ScreenAdapter implements InputProcessor {
 
             float accel = acceleration;
             if (onType4) {
-                accel *= 0.1f;      // во время нахождения на препятствии разгон 40%
+                accel *= 0.1f;
             }
 
             currentSpeed += accel * accelerationMultiplier * delta;
